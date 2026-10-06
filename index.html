@@ -4,28 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volkan Games</title>
+    <meta name="description" content="Games by Volkan Games, an indie game developer.">
+    <meta name="theme-color" content="#0e0c0b">
+    <link rel="icon" href="images/logo-mark.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/logo-mark.png">
+    <meta property="og:title" content="Volkan Games">
+    <meta property="og:description" content="Games by Volkan Games, an indie game developer.">
+    <meta property="og:url" content="https://volkandemir8.github.io/">
+    <meta property="og:image" content="https://volkandemir8.github.io/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Volkan Games</h1>
-        <p>Indie Game Developer</p>
-    </header>
-    
-    <div class="container">
-        <h2>My Games</h2>
-        <div class="games-grid">
-            <a href="game-stealth.html" class="game-card" style="background-image: url('images/skeletonDungeon.png');">
-                <h3>Skeleton Dungeon: Stealth</h3>
-                <p>Sneak through dungeons, outsmart guards, grab the treasure and escape unseen!</p>
-            </a>
-        </div>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="container">
-        <footer>
-            <a href="terms.html">Terms of Use</a>
-        </footer>
-    </div>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html"><img src="images/logo-mark-dark.png" alt="" width="34" height="34">Volkan <span>Games</span></a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="#games">Games</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="intro container">
+            <h1>Volkan Games</h1>
+            <p class="lede">Indie game developer.</p>
+        </section>
+
+        <section class="container" aria-labelledby="featured-title">
+            <div class="featured-card">
+                <div class="featured-media">
+                    <img src="images/skeletonDungeon.png" alt="A hooded figure carrying a torch down a dark spiral staircase" width="800" height="400">
+                    <span class="torch-glow" aria-hidden="true"></span>
+                </div>
+                <div class="featured-body">
+                    <p class="eyebrow">Latest release</p>
+                    <h2 id="featured-title">Skeleton Dungeon: Stealth</h2>
+                    <p>Sneak through dungeons, outsmart guards, grab the treasure and escape unseen.</p>
+                    <div class="actions">
+                        <a class="btn btn-primary btn-play" href="https://play.google.com/store/apps/details?id=com.volkangames.skeletondungeon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.3c-.3.3-.4.7-.4 1.2v17c0 .5.1.9.4 1.2l.1.1 9.5-9.5v-.2L3.7 2.2l-.1.1zm12.8 12.8-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.1c1.1.6 1.1 1.6 0 2.2l-3.8 2.2h-.1zm-.1.1L13 11.9l-9.4 9.4c.3.4.9.4 1.5.1l11.2-6.2m0-6.4L5.1 2.6c-.6-.4-1.2-.3-1.5.1l9.4 9.3 3.3-3.2z"/></svg>
+                            <span><small>Get it on</small>Google Play</span>
+                        </a>
+                        <a class="btn btn-ghost" href="game-stealth.html">Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="games" aria-labelledby="games-title">
+            <h2 class="section-title" id="games-title">Games</h2>
+
+            <ul class="game-grid">
+                <li>
+                    <a class="game-card" href="game-stealth.html">
+                        <div class="game-card-media">
+                            <img src="images/skeletonDungeon.png" alt="" width="800" height="400" loading="lazy">
+                        </div>
+                        <div class="game-card-body">
+                            <h3>Skeleton Dungeon: Stealth</h3>
+                            <p>Sneak through dungeons, outsmart guards, grab the treasure and escape unseen.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section container" id="contact" aria-labelledby="contact-title">
+            <div class="contact-card">
+                <div>
+                    <h2 id="contact-title">Contact</h2>
+                    <p>Questions, feedback or bug reports? Send me an email.</p>
+                </div>
+                <a class="btn btn-ghost" href="mailto:volkan.gamedev@gmail.com">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+                    volkan.gamedev@gmail.com
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <span>© 2026 Volkan Games</span>
+            <nav aria-label="Footer">
+                <a href="#games">Games</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>

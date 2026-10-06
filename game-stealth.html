@@ -4,36 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skeleton Dungeon: Stealth - Volkan Games</title>
+    <meta name="description" content="A tactical stealth game. Grab the treasure, outsmart the guards and reach the exit unseen.">
+    <meta name="theme-color" content="#0e0c0b">
+    <link rel="icon" href="images/logo-mark.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/logo-mark.png">
+    <meta property="og:title" content="Skeleton Dungeon: Stealth">
+    <meta property="og:description" content="A tactical stealth game. Grab the treasure, outsmart the guards and reach the exit unseen.">
+    <meta property="og:url" content="https://volkandemir8.github.io/game-stealth.html">
+    <meta property="og:image" content="https://volkandemir8.github.io/images/skeletonDungeon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="nav-links">
-            <a href="index.html" class="btn">← Back to Home</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html"><img src="images/logo-mark-dark.png" alt="" width="34" height="34">Volkan <span>Games</span></a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="index.html#games" aria-current="page">Games</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
         </div>
-        
-        <h1>Skeleton Dungeon: Stealth</h1>
+    </header>
 
-        <p>Descend into the darkest and most dangerous dungeons in this gripping tactical stealth adventure! 
-            Your mission is simple: grab the hidden treasures, outsmart the heavily armed guards, and reach the 
-            exit completely unseen. But surviving the shadows requires more than just staying out of sight.</p>
+    <main id="main" class="game-page">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html#games">Games</a>
+                <span class="sep" aria-hidden="true">/</span>
+                <span aria-current="page">Skeleton Dungeon: Stealth</span>
+            </nav>
 
-        <p>Plan your every move carefully as you navigate through treacherous corridors. Use your arsenal of 
-            unique abilities to your advantage—turn invisible to slip past tight patrols, throw rocks into the dark
-             to distract enemies, move with absolute silence, or unleash powerful stun bombs when you are cornered.
-              Whether you prefer a slow, methodical approach or fast-paced evasion, your wits and reflexes will be 
-              tested to the absolute limit. Can you escape without leaving a trace?</p>
+            <div class="game-hero">
+                <img src="images/skeletonDungeon.png" alt="A hooded figure carrying a torch down a dark spiral staircase" width="800" height="400">
+                <span class="torch-glow" aria-hidden="true"></span>
+            </div>
 
-        <img src="images/skeletonDungeon.png" alt="Skeleton Dungeon Gameplay Screenshot" style="max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; display: block;">
+            <div class="game-content">
+                <h1>Skeleton Dungeon: Stealth</h1>
+                <p class="lede">Grab the treasure, outsmart the guards and reach the exit unseen.</p>
+                <div class="actions">
+                    <a class="btn btn-primary btn-play" href="https://play.google.com/store/apps/details?id=com.volkangames.skeletondungeon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.3c-.3.3-.4.7-.4 1.2v17c0 .5.1.9.4 1.2l.1.1 9.5-9.5v-.2L3.7 2.2l-.1.1zm12.8 12.8-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.1c1.1.6 1.1 1.6 0 2.2l-3.8 2.2h-.1zm-.1.1L13 11.9l-9.4 9.4c.3.4.9.4 1.5.1l11.2-6.2m0-6.4L5.1 2.6c-.6-.4-1.2-.3-1.5.1l9.4 9.3 3.3-3.2z"/></svg>
+                        <span><small>Get it on</small>Google Play</span>
+                    </a>
+                </div>
 
-        <div style="text-align: center; margin: 30px 0;">
-            <a href="#" class="btn play-store">Download on Google Play</a>
+                <div class="prose">
+                    <p>Descend into the darkest and most dangerous dungeons in this gripping tactical stealth adventure! Your mission is simple: grab the hidden treasures, outsmart the heavily armed guards, and reach the exit completely unseen. But surviving the shadows requires more than just staying out of sight.</p>
+                    <p>Plan your every move carefully as you navigate through treacherous corridors. Use your arsenal of unique abilities to your advantage—turn invisible to slip past tight patrols, throw rocks into the dark to distract enemies, move with absolute silence, or unleash powerful stun bombs when you are cornered. Whether you prefer a slow, methodical approach or fast-paced evasion, your wits and reflexes will be tested to the absolute limit. Can you escape without leaving a trace?</p>
+                </div>
+
+                <ul class="game-links">
+                    <li><a href="privacy-stealth.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
         </div>
-        
-        <footer>
-            <a href="privacy-stealth.html">Skeleton Dungeon: Stealth Privacy Policy</a>
-            <a href="terms.html">Terms of Use</a>
-        </footer>
-    </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <span>© 2026 Volkan Games</span>
+            <nav aria-label="Footer">
+                <a href="index.html#games">Games</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
